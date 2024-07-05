@@ -1,0 +1,6 @@
+# Source fnm environment
+export PATH="/home/$USER/.fnm:$PATH"
+eval "$(fnm env --use-on-cd)"
+
+# Run lint-staged
+npm run lint
