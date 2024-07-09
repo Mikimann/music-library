@@ -16,6 +16,13 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "pages/album/[artistId]/[albumIndex].js",
+    "pages/api/createArtist.ts",
+    "pages/artist/[id].js"
+  ],
   "exclude": ["node_modules"]
 }
