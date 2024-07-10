@@ -110,7 +110,7 @@ export default function AlbumsAndSongsForm({
                 />
                 <input
                   type="text"
-                  placeholder="Song length"
+                  placeholder="Song length (mm:ss)"
                   value={song.length}
                   onChange={(e) =>
                     handleSongChange(
@@ -124,6 +124,7 @@ export default function AlbumsAndSongsForm({
                   required
                 />
               </div>
+
               <Button
                 text="Delete song"
                 type="button"
