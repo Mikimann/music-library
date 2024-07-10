@@ -138,13 +138,13 @@ export default function AlbumsAndSongsForm({
               type="button"
               text="Add song"
               onClick={() => addSong(albumIndex)}
-              className="text-xl w-full text-white px-4 py-2 rounded-md focus:outline-none focus:ring-2 bg-green-500  hover:bg-green-600  focus:ring-green-500"
+              className="btn bg-green-500  hover:bg-green-600  focus:ring-green-500"
             />
             <Button
               type="button"
               onClick={() => deleteAlbum(albumIndex)}
               text="Delete album"
-              className="text-xl w-full text-white px-4 py-2 rounded-md focus:outline-none focus:ring-2 bg-red-500 hover:bg-red-600 focus:ring-red-500"
+              className="btn bg-red-500 hover:bg-red-600 focus:ring-red-500"
             />
           </div>
         </div>
@@ -153,7 +153,7 @@ export default function AlbumsAndSongsForm({
         type="button"
         text="Add album"
         onClick={addAlbum}
-        className="text-xl w-full text-white px-4 py-2 rounded-md focus:outline-none focus:ring-2 bg-green-500  hover:bg-green-600 focus:ring-green-500"
+        className="btn bg-green-500  hover:bg-green-600 focus:ring-green-500"
       />
     </div>
   );

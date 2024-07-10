@@ -47,7 +47,7 @@ export default function UpdateArtist({ artist }: UpdateArtistProps) {
       <Button
         text="Update"
         type="submit"
-        className=" text-xl w-full text-white px-4 py-2 rounded-md focus:outline-none focus:ring-2 bg-green-500 hover:bg-green-600 focus:ring-green-500 my-5"
+        className=" btn bg-green-500 hover:bg-green-600 focus:ring-green-500 my-5"
       />
     </form>
   );

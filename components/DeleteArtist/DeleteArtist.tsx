@@ -24,7 +24,7 @@ export default function DeleteArtist({ artistId }: DeleteArtistProps) {
   return (
     <Button
       text="Delete artist"
-      className="text-xl w-full text-white px-4 py-2 rounded-md focus:outline-none focus:ring-2 hover:bg-red-600 bg-red-500 focus:ring-red-500 "
+      className="btn hover:bg-red-600 bg-red-500 focus:ring-red-500 "
       onClick={handleDelete}
     />
   );
