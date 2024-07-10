@@ -32,7 +32,7 @@ export default function UpdateArtist({ artist }: UpdateArtistProps) {
 
   return (
     <form onSubmit={handleSubmit}>
-      <h3 className="text-xl font-semibold text-gray-700 mb-2">
+      <h3 className="text-xl font-heading font-semibold text-gray-700 mb-2">
         Edit the fields if you wish to update the artist then press the Update
         button at the bottom:
       </h3>
