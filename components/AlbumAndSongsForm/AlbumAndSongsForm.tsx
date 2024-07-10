@@ -61,7 +61,7 @@ export default function AlbumsAndSongsForm({
     <div className="space-y-6">
       {albums.map((album, albumIndex) => (
         <div key={albumIndex} className="bg-white rounded-lg p-6 space-y-4">
-          <h3 className="text-xl font-semibold text-gray-700">
+          <h3 className="font-heading text-xl font-semibold text-gray-700">
             Album {albumIndex + 1}
           </h3>
           <div className="space-y-2">
@@ -72,7 +72,7 @@ export default function AlbumsAndSongsForm({
               onChange={(e) =>
                 handleAlbumChange(albumIndex, 'title', e.target.value)
               }
-              className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="font-body w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
               required
             />
             <textarea
@@ -81,7 +81,7 @@ export default function AlbumsAndSongsForm({
               onChange={(e) =>
                 handleAlbumChange(albumIndex, 'description', e.target.value)
               }
-              className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
+              className=" font-body w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
               rows={10}
               placeholder="Album description"
               required
@@ -105,7 +105,7 @@ export default function AlbumsAndSongsForm({
                       e.target.value
                     )
                   }
-                  className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full font-body border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                   required
                 />
                 <input
@@ -120,7 +120,7 @@ export default function AlbumsAndSongsForm({
                       e.target.value
                     )
                   }
-                  className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className=" font-body w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                   required
                 />
               </div>
@@ -129,7 +129,7 @@ export default function AlbumsAndSongsForm({
                 text="Delete song"
                 type="button"
                 onClick={() => deleteSong(albumIndex, songIndex)}
-                className="ml-4 text-red-600 hover:text-red-800 focus:outline-none"
+                className="font-body ml-4 text-red-600 hover:text-red-800 focus:outline-none"
               />
             </div>
           ))}
@@ -138,13 +138,13 @@ export default function AlbumsAndSongsForm({
               type="button"
               text="Add song"
               onClick={() => addSong(albumIndex)}
-              className="btn bg-green-500  hover:bg-green-600  focus:ring-green-500"
+              className="btn font-body bg-green-500  hover:bg-green-600  focus:ring-green-500"
             />
             <Button
               type="button"
               onClick={() => deleteAlbum(albumIndex)}
               text="Delete album"
-              className="btn bg-red-500 hover:bg-red-600 focus:ring-red-500"
+              className="btn font-body bg-red-500 hover:bg-red-600 focus:ring-red-500"
             />
           </div>
         </div>
@@ -153,7 +153,7 @@ export default function AlbumsAndSongsForm({
         type="button"
         text="Add album"
         onClick={addAlbum}
-        className="btn bg-green-500  hover:bg-green-600 focus:ring-green-500"
+        className="btn font-body bg-green-500  hover:bg-green-600 focus:ring-green-500"
       />
     </div>
   );
