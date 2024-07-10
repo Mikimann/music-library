@@ -21,7 +21,7 @@ export async function getServerSideProps(context) {
 export default function Artist({ artist }) {
   return (
     <div className=" max-w-4xl mx-auto p-6 bg-white shadow-sm border border-gray-400 rounded-lg my-20 px-20">
-      <div className="mb-6">
+      <div>
         <UpdateArtist artist={artist} />
       </div>
       <div className="mb-6">
