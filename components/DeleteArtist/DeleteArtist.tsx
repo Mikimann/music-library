@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router';
 import { DeleteArtistProps } from './DeleteArtist.types';
+import Button from '@/common/Button/Button';
 
 export default function DeleteArtist({ artistId }: DeleteArtistProps) {
   const router = useRouter();
@@ -21,11 +22,10 @@ export default function DeleteArtist({ artistId }: DeleteArtistProps) {
   };
 
   return (
-    <button
-      className=" text-xl w-full bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-500"
+    <Button
+      text="Delete artist"
+      className="text-xl w-full text-white px-4 py-2 rounded-md focus:outline-none focus:ring-2 hover:bg-red-600 bg-red-500 focus:ring-red-500 "
       onClick={handleDelete}
-    >
-      Delete artist
-    </button>
+    />
   );
 }
