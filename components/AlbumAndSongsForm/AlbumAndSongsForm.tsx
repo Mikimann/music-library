@@ -3,6 +3,7 @@ import {
   Album,
   Song,
 } from './AlbumAndSongsForm.types';
+import Button from '@/common/Button/Button';
 
 export default function AlbumsAndSongsForm({
   albums,
@@ -123,40 +124,36 @@ export default function AlbumsAndSongsForm({
                   required
                 />
               </div>
-              <button
+              <Button
+                text="Delete song"
                 type="button"
                 onClick={() => deleteSong(albumIndex, songIndex)}
                 className="ml-4 text-red-600 hover:text-red-800 focus:outline-none"
-              >
-                Delete song
-              </button>
+              />
             </div>
           ))}
           <div className="flex space-x-4">
-            <button
+            <Button
               type="button"
+              text="Add song"
               onClick={() => addSong(albumIndex)}
-              className="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
-            >
-              Add song
-            </button>
-            <button
+              className="text-xl w-full text-white px-4 py-2 rounded-md focus:outline-none focus:ring-2 bg-green-500  hover:bg-green-600  focus:ring-green-500"
+            />
+            <Button
               type="button"
               onClick={() => deleteAlbum(albumIndex)}
-              className="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-500"
-            >
-              Delete album
-            </button>
+              text="Delete album"
+              className="text-xl w-full text-white px-4 py-2 rounded-md focus:outline-none focus:ring-2 bg-red-500 hover:bg-red-600 focus:ring-red-500"
+            />
           </div>
         </div>
       ))}
-      <button
+      <Button
         type="button"
+        text="Add album"
         onClick={addAlbum}
-        className="w-full bg-green-500 text-xl text-white px-4 py-2 rounded-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500"
-      >
-        Add album
-      </button>
+        className="text-xl w-full text-white px-4 py-2 rounded-md focus:outline-none focus:ring-2 bg-green-500  hover:bg-green-600 focus:ring-green-500"
+      />
     </div>
   );
 }

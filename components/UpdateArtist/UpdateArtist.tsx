@@ -1,6 +1,7 @@
 import { ChangeEvent, FormEvent, useState } from 'react';
 import { UpdateArtistProps } from './UpdateArtist.types';
 import AlbumsAndSongsForm from '../AlbumAndSongsForm/AlbumAndSongsForm';
+import Button from '@/common/Button/Button';
 
 export default function UpdateArtist({ artist }: UpdateArtistProps) {
   const [name, setName] = useState(artist.name);
@@ -43,12 +44,11 @@ export default function UpdateArtist({ artist }: UpdateArtistProps) {
         className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
       />
       <AlbumsAndSongsForm albums={albums} setAlbums={setAlbums} />
-      <button
+      <Button
+        text="Update"
         type="submit"
-        className="text-xl w-full bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 mt-5"
-      >
-        Update
-      </button>
+        className=" text-xl w-full text-white px-4 py-2 rounded-md focus:outline-none focus:ring-2 bg-green-500 hover:bg-green-600 focus:ring-green-500 my-5"
+      />
     </form>
   );
 }
