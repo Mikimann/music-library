@@ -53,7 +53,7 @@ export default function CreateArtist() {
       <Button
         text="Create"
         type="submit"
-        className="text-xl w-full text-white px-4 py-2 rounded-md focus:outline-none focus:ring-2 bg-blue-500 hover:bg-blue-600 focus:ring-blue-500 mt-5"
+        className="btn bg-blue-500 hover:bg-blue-600 focus:ring-blue-500 mt-5"
       />
     </form>
   );
